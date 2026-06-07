@@ -1,0 +1,6 @@
+{
+  "name": "Solapur Dental Care",
+  "description": "Premium dental clinic in Solapur, offering gentle oral healthcare, virtual appointments, and expert dental services.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

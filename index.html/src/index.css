@@ -1,0 +1,40 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, -apple-system, sans-serif;
+  --font-heading: "Plus Jakarta Sans", var(--font-sans);
+  --font-mono: "JetBrains Mono", monospace;
+  
+  /* Polish Theme Premium clinical color palette */
+  --color-dental-mint: #e0f2fe;        /* Crisp, clear soft background */
+  --color-dental-teal-light: #f0f9fa; /* Safe, restorative water dental sky tone (#F0F9FA) */
+  --color-dental-teal: #0d9488;       /* Primary attractive deep accent teal-600 */
+  --color-dental-teal-dark: #115e59;  /* Perfect contrast professional teal-800 */
+  --color-dental-mint-accent: #10b981;/* Fresh clean healing green-500 */
+  --color-dental-cream: #fafdfd;      /* High contrast clean clinical slate background */
+}
+
+/* Custom scrollbar to match the faint clinical theme */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #fafbfb;
+}
+::-webkit-scrollbar-thumb {
+  background: #d1dad7;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #b1bab7;
+}
+
+/* Basic structural animations */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.6s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
